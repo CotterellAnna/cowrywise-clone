@@ -8,12 +8,10 @@
     margin: 0.4%;
     font-family: 'CW BR Firma', sans-serif;
 }
-
-.hero_section{
-    background-image: url("../images/naira.svg");
-    background-repeat: no-repeat;
-    background-size: 70%;
-    background-position: 90vh 10vw;
+body{
+    overflow-x: hidden;
+}
+header{
     display: flex;
     flex-direction: column;
     .nav_bar{
@@ -21,13 +19,13 @@
         position: fixed;
         top: 0;
         background: white;
-        width: 98%;
-        margin: 0%;
+        width: 100.29%;
+        margin: 0% -3%;
         align-items: center;
-        padding: 1.3% 0%;
+        padding: 1.3% 2%;
         .logo_section{
             flex: 1;
-            img{
+            svg{
                padding: 3% 0%;
             }
         }
@@ -66,19 +64,28 @@
                 background: #579AF8;
             }
         }
+        i{
+            display: none;
+        }
     }
+}
 
-    .sub_one{
+    .hero_section{
         display: flex;
+        background-image: url("../images/naira.svg");
+        background-repeat: no-repeat;
+        background-size: 70%;
+        background-position: 90vh 10vw;
         .sub_one_text{
             flex: 1.2;
-            padding-top: 22.7%;
+            padding-top: 21%;
+            padding-right: 60%;
             h1{
-                font-size: 3rem;
+                font-size: 3.5rem;
                 color: #022B69;
                 padding: 6% 0%;
                 line-height: 1.25;
-                font-weight: 800;
+                font-weight: 790;
             }
             p{
                 color: #395989;
@@ -98,11 +105,9 @@
                 margin: 4% 0%;
             }
         }
-        .empty{
-            flex: 2.5;
-        }
+        
     }
-}
+
 
 .container_two{
     display: flex;
@@ -155,12 +160,8 @@
 
 .goals{
     display: flex;
-    width: 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
     .goals_image{
         flex: 1;
-        float: left ;
         img{
             height: 80%;
         }
@@ -179,7 +180,7 @@
         }
         img{
             height: 60%;
-            width: 60%;
+            width: 80%;
         }
     }
 }
@@ -189,11 +190,11 @@
     background-image: url("../images/mockup-cowrywise-savings-app.png");
     background-size: 39%;
     background-repeat: no-repeat;
-    background-position: 80% 100px;
+    background-position: 80% 100%;
     height: 77vh;
     background-color: #F4F8FC;
     .app_content{
-      padding: 15% 0%;
+      padding: 15% 65% 0% 0%;
       flex: 1;
       color: #022B69;
       display: flex;
@@ -203,7 +204,7 @@
           font-size: 2.3rem;
           line-height: 1.3;
           padding: 5% 0%;
-          font-weight: 750;
+          font-weight: 800;
       }
       a{
           color: #0468F5;
@@ -211,9 +212,6 @@
           font-weight: 600;
           padding-top: 5%;
       }
-    }
-    .empty{
-        flex: 1.2;
     }
 }
 
@@ -261,20 +259,20 @@
                 }
                 &:before{
                     content: " ";
-                    border-radius: 3%;
+                    height: 14px;
+                    width: 14px;
+                    border-radius: 3px;
                     position: absolute;
                     background-color: #022B69;
-                    padding: 0.5%;
                     margin: 0.5% -2%;
                     box-shadow: 3px 3px 0 0 rgba(2, 43, 105, 0.3);
-                    border-radius: 2px;
                 }
             }
         }
         button{
             color: white;
             background: #0066F5;
-            padding: 2% 5%;
+            padding: 3% 6%;
             border: none;
             border-radius: 5px;
             font-weight: 700;
@@ -319,6 +317,7 @@
 .testimony{
     display: flex;
     background: #CDF2FC;
+    margin: -3%;
     img{
         flex: 1;
         width: 50%;
@@ -334,7 +333,6 @@
         h4{
             color: #022B69;
             font-size: 2.5rem;
-            
             line-height: 1.4;
         }
         p{
@@ -375,19 +373,36 @@ footer{
         flex: 1;
         border: 1px solid rgba(2,43,105,.07);
         box-shadow: 1px 12px 24px rgba(2, 43, 105, 0.05);
-        padding: 5% 2%;
+        padding: 3% 2%;
         border-radius: 10px;
         margin-right: 5%;
             .rating{
                 display: flex;
-                svg{
+                padding-bottom: 5%;
+                .num_star{
                     flex: 1;
-                }
+                    display: flex;
                 h3{
-                    flex: 1;
                     color: #022B69;
-                    font-size: 2rem;
+                    font-size: 2.5rem;
+                    padding: 8% 0% 0%;
+                    width: fit-content;
+                    margin: 0%;
+                    span{
+                        color: #6780A5;
+                        font-size: 1rem;
+                    }
                 }
+                .star{
+                    width: 10vw;
+                    height: 10vh;
+                    margin: 2.4% 5%;
+                }
+            }
+            .app_logo{
+                width: 10vw;
+            }
+            
         }
         h6{
             color: #022B69;
@@ -402,7 +417,7 @@ footer{
         a{
             color: #0066f5;
             margin: 10% 0% 0%;
-            font-size: 0.6rem;
+            font-size: 0.7rem;
             font-weight: 600;
             text-decoration: none;
         }
@@ -492,6 +507,7 @@ footer{
     .address_license{
         display: flex;
         justify-content: center;
+        padding-bottom: 3%;
         p{
             flex: 5;
             height: fit-content;
@@ -538,5 +554,232 @@ footer{
             font-size: 0.9rem;
         }
 
+    }
+}
+@media screen and(max-width: 800px){
+    *{
+        flex-wrap: wrap;
+        padding: 0%;
+        margin: 1%;
+    }
+    header{
+        .nav_bar{
+            .logo_section{
+                svg{
+                    padding: 4%;
+                }
+            }
+            .menu_list{
+                display: none;
+            }
+            .logIn_signUp{
+                display: none;
+            }
+            i{
+                display: block;
+                font-size: 2.5rem;
+                color: #022B69;
+                padding-right: 5%;
+                &:hover{
+                    background: #6780A5;
+                }
+            }
+        }
+    }
+    .hero_section{
+        background-position: -130px 550px;
+        background-size: 790px;
+        height: 910px;
+        .sub_one_text{
+            flex-basis: 100%;
+            width: 100%;
+            padding: 5%;
+            h1{
+                font-size: 2.3rem;
+                font-weight: 800;
+                margin: 1% 0%;
+                padding: 45% 0% 8%;
+            }
+            p{
+                margin: 0% 0% 5%;
+                padding: 0%;
+                text-align: left;
+                width: 100%;
+            }
+            
+        }
+    }
+    .container_two{
+        .heading{
+            padding: 0% 6%;
+            margin-bottom: 5%;
+            h3{
+                line-height: 1;
+                font-size: 1.7rem;
+                font-weight: 800;
+                margin-bottom: 9%;
+            }
+        }
+        .plan_types{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 30%;
+            .card{
+                margin: 3.2%;
+                padding: 6% 12%;
+            }
+        }
+    }
+    .goals{
+        flex-direction: column;
+        .goals_text{
+            margin-top: 100%;
+            h3{
+                font-size: 1.3rem;
+                line-height: 1.2;
+                font-weight: 800;
+            }
+        }
+    }
+    .app_section{
+        background-position: -8px 200px;
+        background-size: 100%;
+        .app_content{
+            padding: 0%;
+        }
+    }
+    .billionaire_circle{
+        flex-direction: column;
+        img{
+            width: 100%;
+        }
+        .circle_content{
+            h3{
+                font-size: 2rem;
+                font-weight: 800;
+            }
+            .listing{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                justify-content: center;
+                align-content: center;
+                margin-left: 8%;
+                .list_item{
+                    max-width: 100%;
+                    margin-bottom: 2%;
+                    h5{
+                        font-size: 1.5rem;
+                        margin-bottom: 0%;
+                        margin-left: 9%;
+                        line-height: 0;
+                    }
+                    &:before{
+                        margin: -0.5% 3%;
+                    }
+                }
+            }
+        }
+        button{
+            margin: 0% 30%;
+        }
+    }
+    .halal_section{
+        flex-direction: column-reverse;
+        img{
+            width: 100%;
+        }
+        .halal_content{
+            h3{
+                font-size: 1.8rem;
+            }
+            p{
+                padding-right: 10%;
+            }
+        }
+    }
+    .testimony{
+        flex-direction: column;
+        img{
+            width: 100%;
+        }
+        .testimony_content{
+            h4{
+                font-size: 1.3rem;
+                line-height: 1.5;
+                font-weight: 700;
+            }
+            p{
+                font-size: 0.8rem;
+                font-weight: 800;
+                span{
+                    font-weight: 800;
+                }
+            }
+            a{
+                font-size: 0.8rem;
+            }
+        }
+    }
+    footer{
+        .mobile_app{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+        
+            .app_review{
+            margin: 5% 0%;
+                .rating{
+                flex-direction: column;
+                .num_star{
+                    h3{
+                        padding: 0%;
+                        margin: 0%;
+                    }
+                }
+                .app_logo{
+                    padding: 0%;
+                    margin: 0%;
+                }
+                }
+            }
+        }
+        .middle_footer{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            .email{
+                padding: 0%;
+                .email_button{
+                    flex-direction: column;
+                    background: none;
+                    input{
+                        background: hsla(0,0%,100%,.25);
+                        padding: 5% 3%;
+                        border-radius: 5px;
+                        margin-bottom: 10%;
+                    }
+                    button{
+                        padding: 5% 1%;
+                        width: 50%;
+                    }
+
+                }
+            }
+        }
+        .bottom_footer{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            margin-top: 20%;
+        }
+        .address_license{
+            display: grid;
+            grid-template-columns: 1fr;
+            .license{
+                width: 50%;
+            }
+            
+        }
     }
 }

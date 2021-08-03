@@ -8,11 +8,11 @@
   font-family: 'CW BR Firma', sans-serif;
 }
 
-.hero_section {
-  background-image: url("../images/naira.svg");
-  background-repeat: no-repeat;
-  background-size: 70%;
-  background-position: 90vh 10vw;
+body {
+  overflow-x: hidden;
+}
+
+header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22,38 +22,38 @@
           flex-direction: column;
 }
 
-.hero_section .nav_bar {
+header .nav_bar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: fixed;
   top: 0;
   background: white;
-  width: 98%;
-  margin: 0%;
+  width: 100.29%;
+  margin: 0% -3%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1.3% 0%;
+  padding: 1.3% 2%;
 }
 
-.hero_section .nav_bar .logo_section {
+header .nav_bar .logo_section {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
 
-.hero_section .nav_bar .logo_section img {
+header .nav_bar .logo_section svg {
   padding: 3% 0%;
 }
 
-.hero_section .nav_bar .menu_list {
+header .nav_bar .menu_list {
   -webkit-box-flex: 4.5;
       -ms-flex: 4.5;
           flex: 4.5;
 }
 
-.hero_section .nav_bar .menu_list ul {
+header .nav_bar .menu_list ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -65,17 +65,17 @@
   padding: 1.3% 0%;
 }
 
-.hero_section .nav_bar .menu_list ul li {
+header .nav_bar .menu_list ul li {
   margin: 0% 3%;
   font-weight: 400;
 }
 
-.hero_section .nav_bar .menu_list ul li a {
+header .nav_bar .menu_list ul li a {
   text-decoration: none;
   color: #7A8FB0;
 }
 
-.hero_section .nav_bar .logIn_signUp {
+header .nav_bar .logIn_signUp {
   -webkit-box-flex: 1.5;
       -ms-flex: 1.5;
           flex: 1.5;
@@ -87,7 +87,7 @@
           justify-content: flex-end;
 }
 
-.hero_section .nav_bar .logIn_signUp button {
+header .nav_bar .logIn_signUp button {
   padding: 3% 5%;
   margin-left: 7%;
   border: 2px solid #579AF8;
@@ -96,33 +96,42 @@
   color: #579AF8;
 }
 
-.hero_section .nav_bar .logIn_signUp .blue {
+header .nav_bar .logIn_signUp .blue {
   color: white;
   background: #579AF8;
 }
 
-.hero_section .sub_one {
+header .nav_bar i {
+  display: none;
+}
+
+.hero_section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-image: url("../images/naira.svg");
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: 90vh 10vw;
 }
 
-.hero_section .sub_one .sub_one_text {
+.hero_section .sub_one_text {
   -webkit-box-flex: 1.2;
       -ms-flex: 1.2;
           flex: 1.2;
-  padding-top: 22.7%;
+  padding-top: 21%;
+  padding-right: 60%;
 }
 
-.hero_section .sub_one .sub_one_text h1 {
-  font-size: 3rem;
+.hero_section .sub_one_text h1 {
+  font-size: 3.5rem;
   color: #022B69;
   padding: 6% 0%;
   line-height: 1.25;
-  font-weight: 800;
+  font-weight: 790;
 }
 
-.hero_section .sub_one .sub_one_text p {
+.hero_section .sub_one_text p {
   color: #395989;
   font-size: 1rem;
   width: 80%;
@@ -131,7 +140,7 @@
   font-weight: 400;
 }
 
-.hero_section .sub_one .sub_one_text button {
+.hero_section .sub_one_text button {
   background: #0066F5;
   color: #F0F6FE;
   border: none;
@@ -139,12 +148,6 @@
   padding: 4%;
   font-weight: 700;
   margin: 4% 0%;
-}
-
-.hero_section .sub_one .empty {
-  -webkit-box-flex: 2.5;
-      -ms-flex: 2.5;
-          flex: 2.5;
 }
 
 .container_two {
@@ -225,20 +228,12 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .goals .goals_image {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  float: left;
 }
 
 .goals .goals_image img {
@@ -269,7 +264,7 @@
 
 .goals .goals_text img {
   height: 60%;
-  width: 60%;
+  width: 80%;
 }
 
 .app_section {
@@ -279,13 +274,13 @@
   background-image: url("../images/mockup-cowrywise-savings-app.png");
   background-size: 39%;
   background-repeat: no-repeat;
-  background-position: 80% 100px;
+  background-position: 80% 100%;
   height: 77vh;
   background-color: #F4F8FC;
 }
 
 .app_section .app_content {
-  padding: 15% 0%;
+  padding: 15% 65% 0% 0%;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -304,7 +299,7 @@
   font-size: 2.3rem;
   line-height: 1.3;
   padding: 5% 0%;
-  font-weight: 750;
+  font-weight: 800;
 }
 
 .app_section .app_content a {
@@ -312,12 +307,6 @@
   text-decoration: none;
   font-weight: 600;
   padding-top: 5%;
-}
-
-.app_section .empty {
-  -webkit-box-flex: 1.2;
-      -ms-flex: 1.2;
-          flex: 1.2;
 }
 
 .billionaire_circle {
@@ -387,20 +376,20 @@
 
 .billionaire_circle .circle_content .listing .list_item:before {
   content: " ";
-  border-radius: 3%;
+  height: 14px;
+  width: 14px;
+  border-radius: 3px;
   position: absolute;
   background-color: #022B69;
-  padding: 0.5%;
   margin: 0.5% -2%;
   -webkit-box-shadow: 3px 3px 0 0 rgba(2, 43, 105, 0.3);
           box-shadow: 3px 3px 0 0 rgba(2, 43, 105, 0.3);
-  border-radius: 2px;
 }
 
 .billionaire_circle .circle_content button {
   color: white;
   background: #0066F5;
-  padding: 2% 5%;
+  padding: 3% 6%;
   border: none;
   border-radius: 5px;
   font-weight: 700;
@@ -463,6 +452,7 @@
   display: -ms-flexbox;
   display: flex;
   background: #CDF2FC;
+  margin: -3%;
 }
 
 .testimony img {
@@ -549,7 +539,7 @@ footer .mobile_app .app_review {
   border: 1px solid rgba(2, 43, 105, 0.07);
   -webkit-box-shadow: 1px 12px 24px rgba(2, 43, 105, 0.05);
           box-shadow: 1px 12px 24px rgba(2, 43, 105, 0.05);
-  padding: 5% 2%;
+  padding: 3% 2%;
   border-radius: 10px;
   margin-right: 5%;
 }
@@ -558,20 +548,41 @@ footer .mobile_app .app_review .rating {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-bottom: 5%;
 }
 
-footer .mobile_app .app_review .rating svg {
+footer .mobile_app .app_review .rating .num_star {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-footer .mobile_app .app_review .rating h3 {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+footer .mobile_app .app_review .rating .num_star h3 {
   color: #022B69;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  padding: 8% 0% 0%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0%;
+}
+
+footer .mobile_app .app_review .rating .num_star h3 span {
+  color: #6780A5;
+  font-size: 1rem;
+}
+
+footer .mobile_app .app_review .rating .num_star .star {
+  width: 10vw;
+  height: 10vh;
+  margin: 2.4% 5%;
+}
+
+footer .mobile_app .app_review .rating .app_logo {
+  width: 10vw;
 }
 
 footer .mobile_app .app_review h6 {
@@ -589,7 +600,7 @@ footer .mobile_app .app_review p {
 footer .mobile_app .app_review a {
   color: #0066f5;
   margin: 10% 0% 0%;
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   font-weight: 600;
   text-decoration: none;
 }
@@ -719,6 +730,7 @@ footer .address_license {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-bottom: 3%;
 }
 
 footer .address_license p {
@@ -783,5 +795,255 @@ footer .copyright p {
   margin: 1% 0%;
   color: #6780A5;
   font-size: 0.9rem;
+}
+
+@media screen and (max-width: 800px) {
+  * {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 0%;
+    margin: 1%;
+  }
+  header .nav_bar .logo_section svg {
+    padding: 4%;
+  }
+  header .nav_bar .menu_list {
+    display: none;
+  }
+  header .nav_bar .logIn_signUp {
+    display: none;
+  }
+  header .nav_bar i {
+    display: block;
+    font-size: 2.5rem;
+    color: #022B69;
+    padding-right: 5%;
+  }
+  header .nav_bar i:hover {
+    background: #6780A5;
+  }
+  .hero_section {
+    background-position: -130px 550px;
+    background-size: 790px;
+    height: 910px;
+  }
+  .hero_section .sub_one_text {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    width: 100%;
+    padding: 5%;
+  }
+  .hero_section .sub_one_text h1 {
+    font-size: 2.3rem;
+    font-weight: 800;
+    margin: 1% 0%;
+    padding: 45% 0% 8%;
+  }
+  .hero_section .sub_one_text p {
+    margin: 0% 0% 5%;
+    padding: 0%;
+    text-align: left;
+    width: 100%;
+  }
+  .container_two .heading {
+    padding: 0% 6%;
+    margin-bottom: 5%;
+  }
+  .container_two .heading h3 {
+    line-height: 1;
+    font-size: 1.7rem;
+    font-weight: 800;
+    margin-bottom: 9%;
+  }
+  .container_two .plan_types {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 30%;
+  }
+  .container_two .plan_types .card {
+    margin: 3.2%;
+    padding: 6% 12%;
+  }
+  .goals {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .goals .goals_text {
+    margin-top: 100%;
+  }
+  .goals .goals_text h3 {
+    font-size: 1.3rem;
+    line-height: 1.2;
+    font-weight: 800;
+  }
+  .app_section {
+    background-position: -8px 200px;
+    background-size: 100%;
+  }
+  .app_section .app_content {
+    padding: 0%;
+  }
+  .billionaire_circle {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .billionaire_circle img {
+    width: 100%;
+  }
+  .billionaire_circle .circle_content h3 {
+    font-size: 2rem;
+    font-weight: 800;
+  }
+  .billionaire_circle .circle_content .listing {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    margin-left: 8%;
+  }
+  .billionaire_circle .circle_content .listing .list_item {
+    max-width: 100%;
+    margin-bottom: 2%;
+  }
+  .billionaire_circle .circle_content .listing .list_item h5 {
+    font-size: 1.5rem;
+    margin-bottom: 0%;
+    margin-left: 9%;
+    line-height: 0;
+  }
+  .billionaire_circle .circle_content .listing .list_item:before {
+    margin: -0.5% 3%;
+  }
+  .billionaire_circle button {
+    margin: 0% 30%;
+  }
+  .halal_section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .halal_section img {
+    width: 100%;
+  }
+  .halal_section .halal_content h3 {
+    font-size: 1.8rem;
+  }
+  .halal_section .halal_content p {
+    padding-right: 10%;
+  }
+  .testimony {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .testimony img {
+    width: 100%;
+  }
+  .testimony .testimony_content h4 {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    font-weight: 700;
+  }
+  .testimony .testimony_content p {
+    font-size: 0.8rem;
+    font-weight: 800;
+  }
+  .testimony .testimony_content p span {
+    font-weight: 800;
+  }
+  .testimony .testimony_content a {
+    font-size: 0.8rem;
+  }
+  footer .mobile_app {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
+  footer .mobile_app .app_review {
+    margin: 5% 0%;
+  }
+  footer .mobile_app .app_review .rating {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .mobile_app .app_review .rating .num_star h3 {
+    padding: 0%;
+    margin: 0%;
+  }
+  footer .mobile_app .app_review .rating .app_logo {
+    padding: 0%;
+    margin: 0%;
+  }
+  footer .middle_footer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
+  footer .middle_footer .email {
+    padding: 0%;
+  }
+  footer .middle_footer .email .email_button {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: none;
+  }
+  footer .middle_footer .email .email_button input {
+    background: rgba(255, 255, 255, 0.25);
+    padding: 5% 3%;
+    border-radius: 5px;
+    margin-bottom: 10%;
+  }
+  footer .middle_footer .email .email_button button {
+    padding: 5% 1%;
+    width: 50%;
+  }
+  footer .bottom_footer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    margin-top: 20%;
+  }
+  footer .address_license {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  footer .address_license .license {
+    width: 50%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
