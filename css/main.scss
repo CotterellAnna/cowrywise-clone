@@ -1,0 +1,542 @@
+
+@font-face {
+    font-family: 'CW BR Firma', sans-serif;
+    src: url(../font/medium.otf) format("embedded-opentype"),
+    url(../font/medium.otf) format("truetype");
+}
+*{
+    margin: 0.4%;
+    font-family: 'CW BR Firma', sans-serif;
+}
+
+.hero_section{
+    background-image: url("../images/naira.svg");
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: 90vh 10vw;
+    display: flex;
+    flex-direction: column;
+    .nav_bar{
+        display: flex;
+        position: fixed;
+        top: 0;
+        background: white;
+        width: 98%;
+        margin: 0%;
+        align-items: center;
+        padding: 1.3% 0%;
+        .logo_section{
+            flex: 1;
+            img{
+               padding: 3% 0%;
+            }
+        }
+        .menu_list{
+            flex: 4.5;
+            ul{
+                display: flex;
+                list-style: none;
+                display: flex;
+                justify-content: flex-start;
+                padding: 1.3% 0%;
+                li{
+                   margin: 0% 3%;
+                   font-weight: 400;
+                    a{
+                        text-decoration: none;
+                        color: #7A8FB0;
+                    }
+                }
+            }
+        }
+        .logIn_signUp{
+            flex: 1.5;
+            display: flex;
+            justify-content: flex-end;
+            button{
+                padding: 3% 5%;
+                margin-left: 7%;
+                border: 2px solid #579AF8;
+                border-radius: 5px;
+                background: white;
+                color: #579AF8;
+            }
+            .blue{
+                color: white;
+                background: #579AF8;
+            }
+        }
+    }
+
+    .sub_one{
+        display: flex;
+        .sub_one_text{
+            flex: 1.2;
+            padding-top: 22.7%;
+            h1{
+                font-size: 3rem;
+                color: #022B69;
+                padding: 6% 0%;
+                line-height: 1.25;
+                font-weight: 800;
+            }
+            p{
+                color: #395989;
+                font-size: 1rem;
+                width: 80%;
+                margin: 0px 0px 15px;
+                line-height: 1.9;
+                font-weight: 400;
+            }
+            button{
+                background:  #0066F5;
+                color: #F0F6FE;
+                border: none;
+                border-radius: 5px;
+                padding: 4%;
+                font-weight: 700;
+                margin: 4% 0%;
+            }
+        }
+        .empty{
+            flex: 2.5;
+        }
+    }
+}
+
+.container_two{
+    display: flex;
+    flex-direction: column;
+    background: #F4F8FC;
+    justify-content: center;
+    padding-top: 5%;
+    .heading{
+        text-align: center;
+        flex: 1;
+        h3{
+            color: #022B69;
+            font-size: 2.5rem;
+            line-height: 2;
+        }
+        p{
+            color: #4D6B97;
+        }
+    }
+    .plan_types{
+        flex: 4;
+        display: grid;
+        width: 77%;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        margin: 5% 10%;
+        .card{
+            background: #FFFFFF;
+            border: none;
+            border-radius: 5px;
+            margin: 0% 13% 10%;
+            width: 75%;
+            padding: 6% 5%;
+            justify-content: center;
+            color: #022B69;
+            i{
+                font-size: 4rem;
+                line-height: 2;
+            }
+            h2{
+                font-weight: 750;
+                line-height: 2;
+            }
+            p{
+                line-height: 1.5;
+            }
+        }
+    }
+}
+
+.goals{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .goals_image{
+        flex: 1;
+        float: left ;
+        img{
+            height: 80%;
+        }
+    }
+    .goals_text{
+        flex: 1.5;
+        display: flex;
+        flex-direction: column;
+        margin-left: 15%;
+        h3{
+            text-align: justify;
+            color: #022B69;
+            font-size: 2.5rem;
+            margin: 3%;
+            line-height: 2;
+        }
+        img{
+            height: 60%;
+            width: 60%;
+        }
+    }
+}
+
+.app_section{
+    display: flex;
+    background-image: url("../images/mockup-cowrywise-savings-app.png");
+    background-size: 39%;
+    background-repeat: no-repeat;
+    background-position: 80% 100px;
+    height: 77vh;
+    background-color: #F4F8FC;
+    .app_content{
+      padding: 15% 0%;
+      flex: 1;
+      color: #022B69;
+      display: flex;
+      flex-direction: column;
+      h3{
+          color: #022B69;
+          font-size: 2.3rem;
+          line-height: 1.3;
+          padding: 5% 0%;
+          font-weight: 750;
+      }
+      a{
+          color: #0468F5;
+          text-decoration: none;
+          font-weight: 600;
+          padding-top: 5%;
+      }
+    }
+    .empty{
+        flex: 1.2;
+    }
+}
+
+.billionaire_circle{
+    display: flex;
+    padding: 7% 0%;
+    img{
+        flex: 1;
+        width: 45%;
+        height: 120vh;
+        border-radius: 5px;
+        object-fit: cover;
+        margin-right: 6%;
+    }
+    .circle_content{
+        flex: 1;
+        padding-top: 7%;
+        color: #022B69;
+        h3{
+            font-size: 2.5rem;
+            font-weight: 800;
+            line-height: 1.3;
+        }
+        p{
+            padding: 7% 0%;
+            padding-right: 8%;
+        }
+        hr{
+            padding-bottom: 0.2%;
+            margin-bottom: 8%;
+        }
+        .listing{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            .list_item{
+                max-width: 50%;
+                margin-bottom: 15%;
+                h5{
+                    font-weight: 850;
+                    font-size: 1rem;
+                }
+                p{
+                    font-size: 1rem;
+                    line-height: 1.3;
+                }
+                &:before{
+                    content: " ";
+                    border-radius: 3%;
+                    position: absolute;
+                    background-color: #022B69;
+                    padding: 0.5%;
+                    margin: 0.5% -2%;
+                    box-shadow: 3px 3px 0 0 rgba(2, 43, 105, 0.3);
+                    border-radius: 2px;
+                }
+            }
+        }
+        button{
+            color: white;
+            background: #0066F5;
+            padding: 2% 5%;
+            border: none;
+            border-radius: 5px;
+            font-weight: 700;
+        }
+    }
+}
+
+
+.halal_section{
+    display: flex;
+    padding: 5% 0% 10%;
+    .halal_content{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        color: #022B69;
+        padding-left: 5%;
+        h3{
+            font-size: 2rem;
+            font-weight: 800;
+            padding-right: 45%;
+            line-height: 1.3;
+        }
+        p{
+            font-size: 1.1rem;
+            padding-right: 30%;
+            line-height: 1.5;
+            margin-top: 5%;
+        }
+    }
+    img{
+        flex: 1;
+        width: 42%;
+        border-radius: 20px;
+        object-fit: cover;
+        margin-right: 10%;
+    }
+}
+
+.testimony{
+    display: flex;
+    background: #CDF2FC;
+    img{
+        flex: 1;
+        width: 50%;
+        height: 130vh;
+        object-fit: cover;
+        margin: 0%;
+    }
+    .testimony_content{
+        flex: 1;
+        padding-right: 7%;
+        padding-top: 7%;
+        padding-left: 7%;
+        h4{
+            color: #022B69;
+            font-size: 2.5rem;
+            
+            line-height: 1.4;
+        }
+        p{
+            color: #022B69;
+            font-weight: 800;
+            padding-top: 5%;
+            line-height: 1.75;
+            span{
+            color: #022B6980;
+            font-weight: 400;
+            }
+        }
+        a{
+            color: #022B6980;
+            text-decoration: none;
+            font-weight: 700;
+        }
+    }
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    margin: 0% 4%;
+    padding: 0% 2%;
+    background-image: url(../images/footer-bg.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 0% 100%;
+    .mobile_app{
+        display: flex;
+        flex-direction: row;
+        margin: 5% 3% 10% 8%;
+        justify-content: center;
+        align-items: center;
+
+        .app_review{
+        flex: 1;
+        border: 1px solid rgba(2,43,105,.07);
+        box-shadow: 1px 12px 24px rgba(2, 43, 105, 0.05);
+        padding: 5% 2%;
+        border-radius: 10px;
+        margin-right: 5%;
+            .rating{
+                display: flex;
+                svg{
+                    flex: 1;
+                }
+                h3{
+                    flex: 1;
+                    color: #022B69;
+                    font-size: 2rem;
+                }
+        }
+        h6{
+            color: #022B69;
+            margin: 0% 0% 3%;
+            font-size: 1.3rem;
+        }
+        p{
+            color: #6c82a3;
+            margin: 3% 0%;
+            font-size: 0.8rem;
+        }
+        a{
+            color: #0066f5;
+            margin: 10% 0% 0%;
+            font-size: 0.6rem;
+            font-weight: 600;
+            text-decoration: none;
+        }
+    }
+    }
+    .middle_footer{
+        display: flex;
+        margin: 0% 0% 5%;
+        background: #0066F5;
+        padding: 7% 6%;
+        border-radius: 12px;
+        box-shadow: 0 59px 51px -34px rgba(0, 103, 245, 0.3);
+        .text{
+            flex: 1;
+            h3{
+                color: white;
+                font-size: 2rem;
+            }
+        }
+        .email{
+            flex: 1;
+            .email_button{
+                display: flex;
+                width: 85%;
+                background: hsla(0,0%,100%,.25);
+                padding: 1%;
+                border-radius: 5px;
+                justify-content: flex-end;
+                input{
+                    background: transparent;
+                    border: none;
+                    color: rgb(5, 4, 4);
+                }
+                button{
+                    border: none;
+                    color: #022b69;
+                    padding: 2% 3%;
+                    border-radius: 5px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+    .bottom_footer{
+        box-sizing: border-box;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 5%;
+        .bottom_footer_col{
+            box-sizing: border-box;
+            flex: 1;
+            h4{
+                color: #022B69;
+            }
+            ul{
+                display: block;
+                padding: 6% 0% 2%;
+                color: #6780A5;
+            
+                li{
+                    list-style: none;
+                    line-height: 2.5;
+                    a{
+                        text-decoration: none;
+                        color: #6780A5;
+                    }
+                }
+            }
+        }
+    }
+    .social_media{
+        margin: 3% 50% 5% 0%;
+        padding-left: 0%;
+        li{
+            display: inline;
+            list-style: none;
+            a{
+                text-decoration: none;
+                i{
+                    color: rgba(2,43,105,.6);
+                }
+            }
+        }
+    }
+    .address_license{
+        display: flex;
+        justify-content: center;
+        p{
+            flex: 5;
+            height: fit-content;
+            color: #022B69;
+            padding: 1.4% 0% 0.5%;
+                span{
+                    color: #6780A5;
+                    font-size: 0.6rem;
+                }
+        }
+        .license{
+            flex: 1;
+            display: flex;
+            padding: 0.5% 3%;
+            margin: 0%;
+            box-shadow: 1px 8px 12px rgba(2, 43, 105, 0.02);
+            border: 1px solid rgba(2,43,105,.06);
+            border-radius: 5px;
+            .image{
+                flex: 0.4;
+                img{
+                    width: 90%;
+                    padding-top: 20%;
+                }
+            }
+            .text{
+                flex: 1.5;
+                padding-top: 3%;
+                color: #022B69;
+                font-weight: 600;
+                .fund{
+                    color: #6780A5;
+                    font-size: 0.6rem;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+    .copyright{
+        p{
+            line-height: 1.2;
+            margin: 1% 0%;
+            color: #6780A5;
+            font-size: 0.9rem;
+        }
+
+    }
+}
